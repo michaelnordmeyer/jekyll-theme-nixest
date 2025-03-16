@@ -1,0 +1,19 @@
+{% include head.html %}
+  <title>{{ site.theme_settings.redirect_page_title | default: "Redirecting…" | smartify }}</title>
+  <link rel="canonical" href="{{ page.redirect.to | absolute_url }}">
+  <meta http-equiv="refresh" content="0; url={{ page.redirect.to | absolute_url }}">
+{% include_cached style.html %}
+</head>
+<body>
+  <main>
+    <article>
+      <p>
+        {{ site.theme_settings.redirect_page_from | default: "Redirecting from" | smartify }} {{ page.redirect.from | relative_url }} {{ site.theme_settings.redirect_page_to | default: "to" | smartify }} {{ page.redirect.to | absolute_url }}.
+      </p>
+      <p>
+        <a href="{{ page.redirect.to | absolute_url }}">{{ site.theme_settings.redirect_page_text | default: "Click here if you are not being redirected." | smartify }}</a>
+      </p>
+    </article>
+  </main>
+</body>
+</html>

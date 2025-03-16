@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+{%- if site.favicon %}
+  {%- if site.favicon_dark %}
+  <link rel="icon" type="{{ site.favicon_media_type }}" media="(prefers-color-scheme: light)" href="{{ site.favicon | relative_url }}">
+  <link rel="icon" type="{{ site.favicon_media_type }}" media="(prefers-color-scheme: dark)" href="{{ site.favicon_dark | relative_url }}">
+  {%- else %}
+  <link rel="icon" type="{{ site.favicon_media_type }}" href="{{ site.favicon | relative_url }}">
+  {%- endif %}
+{%- endif %}
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
+{%- if page.sitemap == false %}
+  <meta name="robots" content="noindex">
+{%- endif %}
