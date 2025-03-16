@@ -32,12 +32,6 @@ If you think this goes too far, use the above mentioned [Jekyll theme “Nix”]
 - A sitemap.xml, because search engines should index us properly
 - No semantic info like Open Graph, Twitter cards, JSON-LD, or Microdata
 
-## Feature Creep and Bloat
-
-To have titles with proper spelling in the post list, you have to have a `title` in your front matter. You can leave it out, but then some characters cannot be displayed, most notably the apostrophe (`'`) or anything, which cannot reasonably put in the post's filename.
-
-Rest assured, this is the only bloat, as we already removed the date with the rest from the front matter, because it can reliably taken from the post's filename for internal processing. And who has time to post more than once a day, anyway.
-
 ## Minutiae
 
 ### Default Colors
