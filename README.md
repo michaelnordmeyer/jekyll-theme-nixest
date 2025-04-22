@@ -18,7 +18,7 @@ This is an open-an-editor-an-just-start-writing theme. Compared to [“Nixer”]
 
 If you think this goes too far, use the above mentioned [Jekyll theme “Nix”](https://github.com/michaelnordmeyer/jekyll-theme-nix) instead.
 
-[I wrote up what inspired me to create both themes](https://michaelnordmeyer.com/i-created-two-ultra-minimalistic-jekyll-themes).
+[I wrote up what inspired me to create the three themes](https://michaelnordmeyer.com/i-created-three-ultra-minimalistic-jekyll-themes).
 
 ## Limited Features
 
