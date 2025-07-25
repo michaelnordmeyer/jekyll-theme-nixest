@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-nixest"
-  spec.version       = "1.1.2"
+  spec.version       = "1.1.4"
   spec.authors       = ["Michael Nordmeyer"]
   spec.email         = ["michaelnordmeyer@users.noreply.github.com"]
 
@@ -17,8 +17,9 @@ Gem::Specification.new do |spec|
   end
 
   spec.required_ruby_version = '>= 2.7.0' # according to jekyll.gemspec
+  spec.required_rubygems_version = ">= 3.4.0"
 
-  spec.add_runtime_dependency "jekyll", ">= 3.9.3", "< 5.0"
+  spec.add_runtime_dependency "jekyll", ">= 3.10.0", "< 5.0"
   spec.add_runtime_dependency "jekyll-include-cache", "~> 0.2"
   spec.add_runtime_dependency "jekyll-redirect-from", "~> 0.16"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4"
