@@ -1,4 +1,7 @@
-{% include head.html %}
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'en-US' }}">
+<head>
+{% include default-head.html %}
   <title>{%- if content -%}{{ content | strip_html | truncate: 150 }}{%- else -%}{{ site.title | smartify }}{%- endif -%}</title>
   <meta name="description" content="{% if content %}{{ content | strip_html | truncate: 150 }}{% else %}{{ site.description | smartify }}{% endif %}">
   <link rel="canonical" href="{{ page.url | absolute_url }}">
