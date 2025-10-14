@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ page.lang | default: site.lang | default: 'en-US' }}">
+<html lang="{{ page.lang | default: site.lang | default: 'en-US' }}" dir="{{ site.theme_settings.lang_direction | default: 'ltr' }}">
 <head>
 {% include default-head.html %}
   <title>{%- if content -%}{{ content | strip_html | truncate: 150 }}{%- else -%}{{ site.title | smartify }}{%- endif -%}</title>
