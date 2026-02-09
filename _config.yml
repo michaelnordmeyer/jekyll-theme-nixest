@@ -56,7 +56,7 @@ defaults:
     values:
       layout: post
   - scope:
-      path: error
+      path: errors
       type: pages
     values:
       layout: error
