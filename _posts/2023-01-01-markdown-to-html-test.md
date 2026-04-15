@@ -93,7 +93,7 @@ This tag shows **bold** text.
 
 ---
 
-## HTML Tags Supported by Github-Flavored Markdown
+## HTML Tags Supported by GitHub-Flavored Markdown
 
 ### Tables
 
