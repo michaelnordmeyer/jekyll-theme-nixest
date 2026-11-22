@@ -1,5 +1,6 @@
 <style>
   :root {
+    color-scheme: light dark;
     --font-size: 1rem;
     /* Calculate integer pixel values depending on the font size (default: 1rem = 16px) */
     --border-size: calc(var(--font-size) * 1/16);
@@ -34,8 +35,7 @@
   th,
   td {
     padding: calc(var(--spacing) * 1 / 4);
-    border: var(--border-size) solid
-      color-mix(in srgb, currentcolor 50%, transparent);
+    border: var(--border-size) solid color-mix(in srgb, currentcolor 50%, transparent);
   }
   img {
     display: block;
@@ -51,11 +51,9 @@
     line-height: 1;
   }
   blockquote {
-    margin: var(--spacing) calc(var(--spacing) * 3 / 2) var(--spacing)
-      calc(var(--spacing) * 1 / 2);
+    margin: var(--spacing) calc(var(--spacing) * 3 / 2) var(--spacing) calc(var(--spacing) * 1 / 2);
     padding-left: var(--spacing);
-    border-left: var(--border-size) solid
-      color-mix(in srgb, currentcolor 50%, transparent);
+    border-left: var(--border-size) solid color-mix(in srgb, currentcolor 50%, transparent);
   }
   pre {
     overflow-x: auto;
